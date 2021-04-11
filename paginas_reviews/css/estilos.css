@@ -1,0 +1,19 @@
+.titulo_review{
+
+        font-style:italic;
+        font-weight:bold;
+        font-size:2em;
+        color: blue;
+        font-family:'Helvetica','Verdana','Monaco',sans-serif;
+  
+}
+
+.review_insitu{
+
+    font-style:italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:bold;
+    
+    color: coral;
+
+}
