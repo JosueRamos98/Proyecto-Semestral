@@ -254,11 +254,34 @@ div#review_tlou {
 
 /*css preguntas frecuentes*/
 
-.preguntas_pa_weones {
-    text-align: center;
-    color: white;
+
+/* imagen responsive*/
+
+.responsive {
+    width: 40%;
+    height: auto;
+    max-width: 100px;
+    margin-right: 20px;
+    min-width: 100px;
 }
 
-h1.preguntas_pa_weones {
-    text-align: right;
+@media screen and (max-width: 700px) {
+    .contenido {
+        font-size: 10px;
+    }
+    .titulo {
+        font-size: 14px;
+    }
+}
+
+
+/* Por debajo de 400px */
+
+@media screen and (max-width: 400px) {
+    .contenido {
+        font-size: 8px;
+    }
+    .titulo {
+        font-size: 12px;
+    }
 }
