@@ -8,63 +8,243 @@
     <link rel="stylesheet" href="/css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/flexboxgrid.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
+    <!-- IMPORTAMOS EL CSS INTERNO-->
+    <link rel="stylesheet" href="/paginas_reviews/css/estilo_review.css">
 </head>
 
 <body>
 
+
+    <!------------------ TOPNAV ------------------>
     <nav class="navbar navbar-expand-lg navbar-dark badge-dark fixed-top">
         <a class="navbar-brand" href="#"></a>
         <div id="logo_pagina">
             <img class="foto_logo" src="../imagenes/snake's lair logo2.png" alt="snake_logo">
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
 
 
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="../index.html">Principal <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" href="../index.html">Principal <span
+                        class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="../paginas_reviews/lanzamientos.html">Lanzamientos</a>
-                <a class="nav-item nav-link" href="../paginas_reviews/preguntas_frecuentes.html">Preguntas Frecuentes</a>
+                <a class="nav-item nav-link" href="../paginas_reviews/preguntas_frecuentes.html">Preguntas
+                    Frecuentes</a>
                 <a class="nav-item nav-link" href="../paginas_reviews/Nosotros.html">Nosotros</a>
             </div>
         </div>
     </nav>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <h1 style="text-align: center;" class="text-white">EN CONSTRUCCION</h1>
-    <h3 style="text-align: center;" class="text-white">Estamos trabajando en nuestra WEB para brindarle un servicio horrible</h3>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <!----------------END OF TOPNAV---------------->
+
+    <br>
+    <br>
+    <br>
+
+    <!-------------INICIO DE PREGUNTAS FRECUENTES--------->
+    <div>
+        <main>
+            <div>
+                <h1 class="titulo">Preguntas Frecuentes</h1>
+            </div>
+            <div class="categorias" id="categorias">
+                <div class="categoria activa" data-categoria="metodos-pago">
+                    <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                        <path
+                            d="M21.19 7h2.81v15h-21v-5h-2.81v-15h21v5zm1.81 1h-19v13h19v-13zm-9.5 1c3.036 0 5.5 2.464 5.5 5.5s-2.464 5.5-5.5 5.5-5.5-2.464-5.5-5.5 2.464-5.5 5.5-5.5zm0 1c2.484 0 4.5 2.016 4.5 4.5s-2.016 4.5-4.5 4.5-4.5-2.016-4.5-4.5 2.016-4.5 4.5-4.5zm.5 8h-1v-.804c-.767-.16-1.478-.689-1.478-1.704h1.022c0 .591.326.886.978.886.817 0 1.327-.915-.167-1.439-.768-.27-1.68-.676-1.68-1.693 0-.796.573-1.297 1.325-1.448v-.798h1v.806c.704.161 1.313.673 1.313 1.598h-1.018c0-.788-.727-.776-.815-.776-.55 0-.787.291-.787.622 0 .247.134.497.957.768 1.056.344 1.663.845 1.663 1.746 0 .651-.376 1.288-1.313 1.448v.788zm6.19-11v-4h-19v13h1.81v-9h17.19z" />
+                    </svg>
+                    <p>Donaciones</p>
+                </div>
+                <div class="categoria" data-categoria="entregas">
+                    <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                        <path
+                            d="M7 24h-5v-9h5v1.735c.638-.198 1.322-.495 1.765-.689.642-.28 1.259-.417 1.887-.417 1.214 0 2.205.499 4.303 1.205.64.214 1.076.716 1.175 1.306 1.124-.863 2.92-2.257 2.937-2.27.357-.284.773-.434 1.2-.434.952 0 1.751.763 1.751 1.708 0 .49-.219.977-.627 1.356-1.378 1.28-2.445 2.233-3.387 3.074-.56.501-1.066.952-1.548 1.393-.749.687-1.518 1.006-2.421 1.006-.405 0-.832-.065-1.308-.2-2.773-.783-4.484-1.036-5.727-1.105v1.332zm-1-8h-3v7h3v-7zm1 5.664c2.092.118 4.405.696 5.999 1.147.817.231 1.761.354 2.782-.581 1.279-1.172 2.722-2.413 4.929-4.463.824-.765-.178-1.783-1.022-1.113 0 0-2.961 2.299-3.689 2.843-.379.285-.695.519-1.148.519-.107 0-.223-.013-.349-.042-.655-.151-1.883-.425-2.755-.701-.575-.183-.371-.993.268-.858.447.093 1.594.35 2.201.52 1.017.281 1.276-.867.422-1.152-.562-.19-.537-.198-1.889-.665-1.301-.451-2.214-.753-3.585-.156-.639.278-1.432.616-2.164.814v3.888zm3.79-19.913l3.21-1.751 7 3.86v7.677l-7 3.735-7-3.735v-7.719l3.784-2.064.002-.005.004.002zm2.71 6.015l-5.5-2.864v6.035l5.5 2.935v-6.106zm1 .001v6.105l5.5-2.935v-6l-5.5 2.83zm1.77-2.035l-5.47-2.848-2.202 1.202 5.404 2.813 2.268-1.167zm-4.412-3.425l5.501 2.864 2.042-1.051-5.404-2.979-2.139 1.166z" />
+                    </svg>
+                    <p>Pedidos</p>
+                </div>
+                <div class="categoria" data-categoria="seguridad">
+                    <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                        <path
+                            d="M12 0c-3.371 2.866-5.484 3-9 3v11.535c0 4.603 3.203 5.804 9 9.465 5.797-3.661 9-4.862 9-9.465v-11.535c-3.516 0-5.629-.134-9-3zm0 1.292c2.942 2.31 5.12 2.655 8 2.701v10.542c0 3.891-2.638 4.943-8 8.284-5.375-3.35-8-4.414-8-8.284v-10.542c2.88-.046 5.058-.391 8-2.701zm5 7.739l-5.992 6.623-3.672-3.931.701-.683 3.008 3.184 5.227-5.878.728.685z" />
+                    </svg>
+                    <p>Seguridad</p>
+                </div>
+                <div class="categoria" data-categoria="cuenta">
+                    <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                        <path
+                            d="M9.484 15.696l-.711-.696-2.552 2.607-1.539-1.452-.698.709 2.25 2.136 3.25-3.304zm0-5l-.711-.696-2.552 2.607-1.539-1.452-.698.709 2.25 2.136 3.25-3.304zm0-5l-.711-.696-2.552 2.607-1.539-1.452-.698.709 2.25 2.136 3.25-3.304zm10.516 11.304h-8v1h8v-1zm0-5h-8v1h8v-1zm0-5h-8v1h8v-1zm4-5h-24v20h24v-20zm-1 19h-22v-18h22v18z" />
+                    </svg>
+                    <p>Cuenta</p>
+                </div>
+            </div>
+
+            <div class="preguntas">
+
+                <!-- Preguntas Metodos de pago -->
+                <div class="contenedor-preguntas activo" data-categoria="metodos-pago">
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Por qué hacer donaciones a nuestra página web? <img src="../img/suma.svg"
+                                alt="Abrir Respuesta" /></p>
+                        <p class="respuesta">Al ser una página libre de publicidad no tenemos sustento para poder
+                            mantener los costos de la página, ya sea el dominio y la base de datos.
+                            Además nosotros no vendemos la informacion de nuestros clientes a terceros, principalmente
+                            por que no hemos tenido ofertas y nadie las quiere, pero apenas tengamos una
+                            oferta buena, estamos dispuestos a conversar.
+                            <br>
+                            Aparte y como anotacion, ¡¡los videojuegos son muy caros!!
+                        </p>
+                    </div>
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">Metodos de pago en donaciones <img src="../img/suma.svg"
+                                alt="Abrir Respuesta" />
+                        </p>
+                        <p class="respuesta">Estamos dispuestos a aceptar donaciones en mercaderia, bitcoin, dogecoin,
+                            ropa usada y lo que quieras donar, ademas estamos recibiendo donaciones en
+                            cuenta rut y transferecias del banco estado.
+                            <br>
+                            Si realizas un envio, por favor, pagalo y no lo envies por pagar. Muchas gracias.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Preguntas Entregas -->
+                <div class="contenedor-preguntas" data-categoria="entregas">
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Hacen pedidos de Reviews? <img src="../img/suma.svg"
+                                alt="Abrir Respuesta" /></p>
+                        <p class="respuesta">Si, aceptamos pedidos de reviews que sean exclusivamente de videojuegos, el
+                            tiempo de espera en una review es de dos semanas aproximadamente debido que
+                            nos dedicamos a probar el juego, completarlo y ser muy objetivos con todo lo que incluya en
+                            el. Es por esto que nos damos un plazo de dos semanas para poder disfrutar el
+                            juego y darte la mejor review que puedas obtener.
+                        </p>
+                    </div>
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Van a vender accesorios de su página pronto? <img src="../img/suma.svg"
+                                alt="Abrir Respuesta" /></p>
+                        <p class="respuesta">Estamos evaluando crear productos y accesorios con tematica de la página
+                            como un comienzo, así empezar a sustentar la página de una manera honesta.
+                            Pronto tendremos mas detalles. <br>Estén atentos a nuestras redes sociales</p>
+                    </div>
+                </div>
+
+                <!-- Preguntas Seguridad -->
+                <div class="contenedor-preguntas" data-categoria="seguridad">
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Como puedo saber si son confiables? <img src="../img/suma.svg"
+                                alt="Abrir Respuesta" /></p>
+                        <p class="respuesta">Fácil, nosotros no estamos vendiendo tus datos por ahi en internet, tampoco
+                            estamos dispuestos a hacerlo. Nuestras cookies están para brindarte un mejor servicio
+                            y nada mas, para registrarte solicitamos los menos datos posibles, los mínimos para
+                            confirmar tu identidad y verificar que no eres un robot.
+                        </p>
+                    </div>
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Que pasa con mis datos personales? <img src="../img/suma.svg"
+                                alt="Abrir Respuesta" /></p>
+                        <p class="respuesta">Tus datos personales están seguros bajo nuestra alfombra. Utilizamos los
+                            mejores servicios gratuitos de seguridad y siempre los estamos actualizando.
+                            Puedes navegar tranquilo y sin remordimientos de que tus datos puedan ser filtrados.
+
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Preguntas Cuenta -->
+                <div class="contenedor-preguntas" data-categoria="cuenta">
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Como puedo acceder a mi perfil si he olvidado la contraseña? <img
+                                src="../img/suma.svg" alt="Abrir Respuesta" /></p>
+                        <p class="respuesta">Sólo enviamos un correo a YaSeMeOlvidó@DeNuevo.com con tu usuario y
+                            procederemos a verificar que eres tu para poder enviarte un link para que restasblescas tu
+                            contraseña. </p>
+                    </div>
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Como puedo cambiar mi contraseña? <img src="../img/suma.svg"
+                                alt="Abrir Respuesta" /></p>
+                        <p class="respuesta">Desde tu cuenta accede a configuracion de perfil > cambiar contraseña para
+                            poder cambiarla, es necesario que estés logeado antes de cambiarla y se te pedirá introducir
+                            tu antigua contraseña para verificar que eres tu.</p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </main>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div>
-        <footer class="bg-dark text-center text-white fixed-bottom ">
+        <footer class="bg-dark text-center text-white  ">
 
             <!-- Section: Social media -->
             <div class="template-demo">
                 <a class="btn" href="https://www.facebook.com/home.php" role="button">
                     <button type="button" class="btn btn-social-icon btn-facebook btn-rounded">
-                            <i class="fa fa-facebook"></i>
-                        </button>
+                        <i class="fa fa-facebook"></i>
+                    </button>
                 </a>
                 <a class="btn" href="https://www.youtube.com" role="button">
                     <button type="button" class="btn btn-social-icon btn-youtube btn-rounded">
-                            <i class="fa fa-youtube"></i>
-                            </button>
+                        <i class="fa fa-youtube"></i>
+                    </button>
                 </a>
                 <a class="btn" href="https://www.twitter.com" role="button">
                     <button type="button" class="btn btn-social-icon btn-twitter btn-rounded">
-                            <i class="fa fa-twitter"></i>
-                        </button>
+                        <i class="fa fa-twitter"></i>
+                    </button>
                 </a>
                 <a class="btn" href="https://www.instagram.com" role="button">
                     <button type="button" class="btn btn-social-icon btn-instagram btn-rounded">
-                             <i class="fa fa-instagram"></i>
-                        </button>
+                        <i class="fa fa-instagram"></i>
+                    </button>
                 </a>
             </div>
             <!-- Section: Social media -->
@@ -74,7 +254,8 @@
             <!-- Section: Text -->
             <section class="mb-4">
                 <p>
-                    Somos una pagina de videojuegos libre de publicidad por que nos dedicamos a robarte la informacion y venderla a terceras personas algo asi como facebook pero nosotros lo reconocemos directamente.
+                    Somos una pagina de videojuegos libre de publicidad por que nos dedicamos a robarte la informacion y
+                    venderla a terceras personas algo asi como facebook pero nosotros lo reconocemos directamente.
                 </p>
             </section>
             <!-- Section: Text -->
@@ -89,6 +270,14 @@
             <!-- Copyright -->
         </footer>
     </div>
+
+
+    <!--IMPORTAMOS LOS .JS HECHOS PARA LAS PREGUNTAS FRECUENTES-->
+
+
+    <script src="../js/categorias.js"></script>
+    <script src="../js/preguntasFrecuentes.js"></script>
+
 
 </body>
 
