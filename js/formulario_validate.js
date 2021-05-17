@@ -13,6 +13,18 @@ $(document).ready(function() {
         minlength: 5,
         maxlength: 15
         
+      },
+      edad: {
+        
+        min: 18,
+        required: true,
+        Number: true,
+        
+        
+        
+        
+
+
       }
 
     },
@@ -27,6 +39,12 @@ $(document).ready(function() {
           minlength: "Debe introducir un apellido válido",
           maxlength: "El apellido ingresado es mas largo de lo esperado",
           required: "El campo es obligatorio"
+      },
+      edad:{ 
+        min: "Tienes que tener más de 18 años para registrarte. Si eres menor de 18, consulta a tus padres",
+        required: "La edad es obligatoria",
+        Number: "Ingresa una edad válida",
+        
       }
     }
   });
