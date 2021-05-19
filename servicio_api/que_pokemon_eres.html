@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,17 +10,65 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    
-</head>
-<body>
-    <br>
-    <br>
-    <h1>¿Qué pokémon eres?</h1>
-    <br>
 
-    <h1>Felicidades eres un</h1>
+    <!--importamos css-->
+    <link rel="stylesheet" href="/servicio_api/css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+
+
+    <link rel="stylesheet" href="../css/flexboxgrid.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark badge-dark fixed-top">
+        <a class="navbar-brand" href="#"></a>
+        <div id="logo_pagina">
+            <img class="foto_logo" src="../imagenes/snake's lair logo2.png" alt="snake_logo">
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="../index.html">Principal <span
+                        class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="../paginas_reviews/lanzamientos.html">Lanzamientos</a>
+                <a class="nav-item nav-link" href="../paginas_reviews/preguntas_frecuentes.html">Preguntas
+                    Frecuentes</a>
+                <a class="nav-item nav-link" href="../paginas_reviews/Nosotros.html">Nosotros</a>
+                <a class="nav-item nav-link" href="paginas_reviews/por_que_registrarse.html">Registrate</a>
+            </div>
+
+        </div>
+
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
 
     <main class="flex"></main>
 
@@ -28,40 +77,51 @@
             <img src="images/600px_Rojo.png" alt="imagen header card" class="card-header">
             <div class="card-body">
                 <img src="./images/image-victor.jpg" alt="imagen de vitoko" class="card-body-img">
-                <h1 class="card-body-title">
-                    Victor charst
-                    <span>26</span>
+                <h1>
+                    <p>Felicidades eres un:</p>
                 </h1>
-                <p class="card-body-text">London</p>
+                <h1 class="card-body-title">
+
+                    <span> </span>
+                </h1>
+
+                <p class="card-body-text"></p>
             </div>
             <div class="card-footer">
-                
+
                 <div class="card-footer-social">
-                    <h3>80K</h3>
+                    <h3> </h3>
                     <p>Ataque</p>
                 </div>
                 <div class="card-footer-social">
-                    <h3>803K</h3>
+                    <h3> </h3>
                     <p>Ataque Especial</p>
                 </div>
-            
+
                 <div class="card-footer-social">
-                    <h3>1.4K</h3>
+                    <h3> </h3>
                     <p>Defensa</p>
                 </div>
-            
+
             </div>
         </article>
     </template>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-<div class="btn_btn">
-    <button type="button" class="btn" onclick="history.go(0)">Prueba otra vez</button>
-    <button type="button" class="btn" onclick= >Regresar</button>
-</div>
 
-<br>
-<br>
-<br>
+    <div class="btn_btn">
+        <a type="button" class="btn" href="que_pokemon_eres.html">Prueba otra vez</a>
+        <a type="button" href="../index.html" class="btn">Regresar </a>
+    </div>
+
+    <br>
+    <br>
+    <br>
     <script src="../servicio_api/js/pokemon.js"></script>
 </body>
+
 </html>

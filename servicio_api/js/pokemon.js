@@ -54,11 +54,15 @@ const pintarCard = pokemon => {
     // clone.querySelector('.card-body-img').setAttribute('src', pokemon.imgJuego)
     clone.querySelector('.card-body-title').innerHTML = `${pokemon.nombre} <span>${pokemon.hp}hp</span>`
     clone.querySelector('.card-body-text').textContent = pokemon.experiencia + ' exp'
-    clone.querySelectorAll('.card-footer-social h3')[0].textContent = pokemon.ataque + 'K'
-    clone.querySelectorAll('.card-footer-social h3')[1].textContent = pokemon.especial + 'K'
-    clone.querySelectorAll('.card-footer-social h3')[2].textContent = pokemon.defensa + 'K'
+    clone.querySelectorAll('.card-footer-social h3')[0].textContent = pokemon.ataque 
+    clone.querySelectorAll('.card-footer-social h3')[1].textContent = pokemon.especial 
+    clone.querySelectorAll('.card-footer-social h3')[2].textContent = pokemon.defensa 
 
     fragment.appendChild(clone)
     flex.appendChild(fragment)
 }
+
+
+
+/* --------------------------------------------------------------*/
 
