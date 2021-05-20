@@ -18,7 +18,7 @@
     
     font-family: "Balsamiq Sans", cursive;
     color: var(--clr-neon);
-    padding-right: 10rem;
+    padding-right: 0;
     /* The image used */
     background-image: url("../../imagenes/fondo_pagina_web.png");
     min-height: 380px;
@@ -98,6 +98,7 @@
   h1{
     color:white;
     font-size: xx-large;
+    text-align: center justify;
 
   }
 
@@ -152,5 +153,6 @@ div#titulo_registro{
     color: var(--clr-neon);
     text-decoration: underline;
 }
+
 
 
