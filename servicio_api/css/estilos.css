@@ -127,24 +127,27 @@ h1{
   }
 
 
+  .boton_personalizado{
+    text-decoration: none;
+    margin: 10px;
+    
 
-.btn{
-    background:rgba(0, 0, 0, 0.7);
-    color: white;
-    text-align: center;
-    width: 200px;
-    border: 2px solid white;
-    height: auto;
+    padding: 10px;
+    font-weight: 600;
     font-size: 20px;
+    color: #ffffff;
+    background-color: black;
+    border-radius: 6px;
+    border: 2px solid white;
+  }
+  .boton_personalizado:hover{
+    color: grey;
+     
+  }
 
+  .padre{
 
+    display: flex;
+    justify-content: center;
     
-    
-
-
-}
-div.btn_btn{
-    text-align: center;
-    
-
-}
+  }
